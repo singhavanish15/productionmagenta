@@ -1,0 +1,355 @@
+{% extends 'base.html' %}
+
+{% block title %}Team | MAGENTA{% endblock title %}
+
+{% block body %}
+
+<div class="wrapper-hidden z-index-100" id="main-wrapper">
+   <main>
+    <!-- [3] Page-Header -->
+	<header class="page-header parallax-window bg_img dark_overlay" data-src="static/media/team.jpg">
+		<div class="container breadcrumbs-wrapper">
+			<div class="breadcrumbs d-flex flex-column justify-content-center">
+				<h1 class="title">Team</h1>
+				<div>
+					<ul class="breadcrumbs-list d-flex">
+						<li>
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<a href="team">Team</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+    <!-- [4] About Person -->
+	<section class="about-person">
+		<div class="container large-section">
+			<div class="row about-person-wrapper">
+				<div class="col-lg-6 image-wrapper" data-aos="fade-right"
+				     data-aos-anchor-placement="top-bottom"
+				     data-aos-delay="150"
+				     data-aos-duration="600"
+				     data-aos-easing="ease-in-out">
+					<img alt="" class="img-fluid" src="static/media/image_2023_01_20T12_18_11_874Z.png">
+				</div>
+				<div class="col-lg-6 d-flex align-items-center">
+					<div data-aos="fade-left"
+					     data-aos-anchor-placement="top-bottom"
+					     data-aos-delay="200"
+					     data-aos-duration="600"
+					     data-aos-easing="ease-in-out">
+						<h3 class="name">Samrat Roy</h3>
+						<p class="position">Chief Executive Ofiicer</p>
+						<p class="description">
+							Morbi in dui quis est pulvinar ullamcorper nulla facilisi. Integer lacinia sollicitudin
+							massa.
+							Cras metused aliquet risus a tortor integer id quam morbi mi. Quisque nisl felis,
+							venenatis
+							tristique
+						</p>
+						<div class="btn-wrapper d-flex">
+							<a class="button-default-black" href="#"><i class="fa fa-angle-double-down"></i>Download CV</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- [5] Video Section -->
+	<section class="video-section parallax-window color_overlay" data-speed="0.5"
+    data-src="static/media/video-overview-team.jpg">
+<div class="container video-wrapper d-flex flex-column align-items-center"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-delay="150"
+    data-aos-duration="600"
+    data-aos-easing="ease-in-out">
+   <h3 class="title">We are A Team here in MAGENTA</h3>
+   <p>In scelerisque sem at dolor maecenas mattis sed convallis tristique sem.
+      Proin ut ligula vel nunc
+      egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis
+      quis ligula lacinia aliquetm auris ipsum.</p>
+   <a class="popup-modal video-popup d-flex align-items-center justify-content-center"
+      href="#video-post-1">
+       <div class="play d-flex align-items-center justify-content-center">
+           <i class="fa fa-play"></i>
+       </div>
+   </a>
+   <div class="white-popup-block mfp-hide mfp-fade" id="video-post-1">
+       <div class="modal-video-box">
+           <iframe allowfullscreen
+                   src="static/media/video.mp4"></iframe>
+           <button class="mfp-close" title="Close (Esc)" type="button">×</button>
+       </div>
+   </div>
+</div>
+</section>
+<!-- [6] Team Grid -->
+<section class="meet-team cards-section gray-section"
+style="background-image: url('assets/img/assets/absurdity.png')">
+<div class="container">
+<div class="row">
+   <div class="col">
+       <h2 class="section-title text-center title-divider"
+           data-aos="fade-up"
+           data-aos-anchor-placement="top-bottom"
+           data-aos-delay="100"
+           data-aos-duration="700"
+           data-aos-easing="ease-in-out">Meet Our Team
+           <span class="highlight">.</span>
+       </h2>
+   </div>
+</div>
+<div class="row">
+   <div class="col-lg-3 col-sm-6"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="150"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out">
+       <div class="team-member-type-2">
+           <div class="img-wrapper">
+               <img alt="" class="img-fluid" src="http://via.placeholder.com/1920x1080">
+           </div>
+           <div class="description-box">
+               <h6 class="name">Mradul Gaur</h6>
+               <p class="position">Comapny Secretary</p>
+               <div class="social-wrapper d-flex">
+                   <a class="social-box facebook-h" href="#">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a class="social-box twitter-h" href="#">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a class="social-box linkedin-h" href="#">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+                   <a class="social-box google-plus-h" href="#">
+                       <i class="fab fa-google-plus-g"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-3 col-sm-6"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="200"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out">
+       <div class="team-member-type-2">
+           <div class="img-wrapper">
+               <img alt="" class="img-fluid" src="http://via.placeholder.com/1920x1080">
+           </div>
+           <div class="description-box">
+               <h6 class="name">Manoj Kumar Sharma</h6>
+               <p class="position">Operation Head</p>
+               <div class="social-wrapper d-flex">
+                   <a class="social-box facebook-h" href="#">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a class="social-box twitter-h" href="#">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a class="social-box linkedin-h" href="#">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+                   <a class="social-box google-plus-h" href="#">
+                       <i class="fab fa-google-plus-g"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-3 col-sm-6"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="250"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out">
+       <div class="team-member-type-2">
+           <div class="img-wrapper">
+               <img alt="" class="img-fluid" src="http://via.placeholder.com/1920x1080">
+           </div>
+           <div class="description-box">
+               <h6 class="name">Pramod Yadav</h6>
+               <p class="position">Audit & Risk</p>
+               <div class="social-wrapper d-flex">
+                   <a class="social-box facebook-h" href="#">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a class="social-box twitter-h" href="#">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a class="social-box linkedin-h" href="#">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+                   <a class="social-box google-plus-h" href="#">
+                       <i class="fab fa-google-plus-g"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-3 col-sm-6"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="300"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out">
+       <div class="team-member-type-2">
+           <div class="img-wrapper">
+               <img alt="" class="img-fluid" src="http://via.placeholder.com/1920x1080">
+           </div>
+           <div class="description-box">
+               <h6 class="name">Sabri Dasan</h6>
+               <p class="position">MIS Officer</p>
+               <div class="social-wrapper d-flex">
+                   <a class="social-box facebook-h" href="#">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a class="social-box twitter-h" href="#">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a class="social-box linkedin-h" href="#">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+                   <a class="social-box google-plus-h" href="#">
+                       <i class="fab fa-google-plus-g"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-3 col-sm-6"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="150"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out">
+       <div class="team-member-type-2">
+           <div class="img-wrapper">
+               <img alt="" class="img-fluid" src="http://via.placeholder.com/1920x1080">
+           </div>
+           <div class="description-box">
+               <h6 class="name">Ajay Kumar</h6>
+               <p class="position">Accounts</p>
+               <div class="social-wrapper d-flex">
+                   <a class="social-box facebook-h" href="#">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a class="social-box twitter-h" href="#">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a class="social-box linkedin-h" href="#">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+                   <a class="social-box google-plus-h" href="#">
+                       <i class="fab fa-google-plus-g"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-3 col-sm-6"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="200"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out">
+       <div class="team-member-type-2">
+           <div class="img-wrapper">
+               <img alt="" class="img-fluid" src="http://via.placeholder.com/1920x1080">
+           </div>
+           <div class="description-box">
+               <h6 class="name">Nisha</h6>
+               <p class="position">HR</p>
+               <div class="social-wrapper d-flex">
+                   <a class="social-box facebook-h" href="#">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a class="social-box twitter-h" href="#">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a class="social-box linkedin-h" href="#">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+                   <a class="social-box google-plus-h" href="#">
+                       <i class="fab fa-google-plus-g"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-3 col-sm-6"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="250"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out">
+       <div class="team-member-type-2">
+           <div class="img-wrapper">
+               <img alt="" class="img-fluid" src="http://via.placeholder.com/1920x1080">
+           </div>
+           <div class="description-box">
+               <h6 class="name">Lakahan Ojha</h6>
+               <p class="position">Tele-Caller</p>
+               <div class="social-wrapper d-flex">
+                   <a class="social-box facebook-h" href="#">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a class="social-box twitter-h" href="#">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a class="social-box linkedin-h" href="#">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+                   <a class="social-box google-plus-h" href="#">
+                       <i class="fab fa-google-plus-g"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-3 col-sm-6"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="300"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out">
+       <div class="team-member-type-2">
+           <div class="img-wrapper">
+               <img alt="" class="img-fluid" src="http://via.placeholder.com/1920x1080">
+           </div>
+           <div class="description-box">
+               <h6 class="name">Alex Gray</h6>
+               <p class="position">Developer</p>
+               <div class="social-wrapper d-flex">
+                   <a class="social-box facebook-h" href="#">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a class="social-box twitter-h" href="#">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a class="social-box linkedin-h" href="#">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+                   <a class="social-box google-plus-h" href="#">
+                       <i class="fab fa-google-plus-g"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+</div>
+</section>
+   </main>
+
+</div>
+
+
+{% endblock %}

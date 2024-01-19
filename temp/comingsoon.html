@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coming Soon</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        .countdown {
+            font-size: 24px;
+            color: #555;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coming Soon</h1>
+    <p>We are working on something awesome!</p>
+    <div class="countdown">
+        <p id="countdown"></p>
+    </div>
+
+    <script>
+        // Set the countdown date (replace with your desired date)
+        var countdownDate = new Date("2023-11-08T00:00:00Z").getTime();
+
+        // Update the countdown every second
+        var countdown = setInterval(function() {
+            // Get the current date and time
+            var now = new Date().getTime();
+
+            // Calculate the distance between now and the countdown date
+            var distance = countdownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the countdown is finished, display a message
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "The countdown is over!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

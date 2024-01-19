@@ -1,0 +1,486 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=UTF-8>
+	<meta content="width=device-width, initial-scale=1.0" name=viewport>
+	<meta content="ie=edge" http-equiv="x-ua-compatible">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta content="#ee3158" name="theme-color" />
+	<!-- Windows Phone -->
+	<meta content="#ee3158" name="msapplication-navbutton-color" />
+	<meta content=#FFFFFF name=msapplication-TileColor>
+	<meta content=favicon.ico name=msapplication-TileImage>
+	<!-- iOS Safari -->
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black-transcluent" name="apple-mobile-web-app-status-bar-style" />
+	<title>{% block title %}{% endblock title %}</title>
+	
+	<!-- css-files -->
+	<link href="static/assets/css/swiper.min.css" rel="stylesheet">
+	<link href="static/assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="static/assets/css/magnific-popup.min.css" rel="stylesheet">
+	<link href="static/assets/css/aos.min.css" rel="stylesheet">
+	<link href="static/assets/css/fonts.css" rel="stylesheet">
+	<link href="static/assets/css/main.css" rel="stylesheet">
+	<link rel="icon" href="static/media/favicon1.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!--
+[Home Page]
+[1] Page Loader
+[2] Navigation-Menu
+[3] Hero-Header
+[4] About Section
+[5] Digital Services
+[6] Counter Section
+[7] Team Section
+[8] Blockquote Section
+[9] Content Section
+[10] Recent Projects
+[11] Testimonials
+[12] Recent Posts
+[13] Footer
+-->
+<body>
+<!-- [1] Page Loader -->
+<div class="loader">
+	<div class="loading">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
+<div class="wrapper-hidden z-index-100" id="main-wrapper">
+	<!-- [2] Navigation-Menu -->
+	<nav class="navigation navigation-type-1">
+		<div class="inner-wrapper">
+			<div class="left-side">
+				<div class="logotype-wrapper">
+					<a href="/">
+						<img alt="Logo"
+						     src="static/media/magentalogo.png">
+					</a>
+					
+				</div>
+			</div>
+			<div>
+				<h5 style="color:rgba(232,18,140,255);">MAGENTA FINANCE SERVICES PRIVATE LIMITED</h5>
+		   </div>
+			<div class="navigation-panel-wrapper">
+				
+				<div class="search-form-toggle">
+					<i class="fa fa-search"></i>
+				</div>
+				<div class="menu-toggle-wrapper">
+					<div class="menu-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search-form-wrapper">
+			<div class="search-form">
+				<div class="form-wrapper">
+					<form role="search">
+						<input class="search-field" placeholder="Enter some keywords..."
+						       title="Enter some keywords..."
+						       type="search">
+						<button class="search-submit" type="submit">
+							<i class="icofont-search"></i>
+						</button>
+					</form>
+					<div class="search-form-close">
+						<i class="far fa-times-circle"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-list-panel">
+			<div class="menu-toggle-close">
+				<i class="far fa-times-circle"></i>
+			</div>
+			<div class="menu-list-wrapper" data-back-link="go back">
+				<ul class="menu-list">
+					<li class="menu-item menu-item-has-children">
+						<a>Home</a>
+						<ul class="sub-menu">
+							<li class="menu-item">
+								<a href="/">Home</a>
+							</li>	
+						</ul>
+					</li>
+					<li class="menu-item menu-item-has-children">
+						<a>About</a>
+						<ul class="sub-menu">
+							<li class="menu-item">
+								<li ><a href="about">About Us</a></li>
+								<li ><a href="team">About Team</a></li>
+								<li ><a href="gallery">Gallery</a></li>	
+							</li>
+							<!-- <li class="menu-item"><a href="contacts.html">Contacts</a></li>
+							<li class="menu-item"><a href="team.html">Team</a></li>
+							<li class="menu-item"><a href="404.html">404 Error Page</a></li>
+							<li class="menu-item"><a href="clients.html">Clients</a></li>
+							<li class="menu-item"><a href="pricing.html">Pricing</a></li>
+							<li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
+							<li class="menu-item"><a href="faq.html">FAQ</a></li> -->
+						</ul>
+					</li>
+					<li class="menu-item menu-item-has-children">
+						<a>Services</a>
+						<ul class="sub-menu">
+							<li class="menu-item">
+								<a href="ourbusinessmodel">Our Business Model</a>
+							</li>
+							<li class="menu-item">
+								<a href="ouroperationalmodel">Our Opertional Model</a>
+							</li>
+							<li class="menu-item">
+								<a href="ourproduct">Our Products</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item menu-item-has-children">
+						<a>Downloads</a>
+						<ul class="sub-menu">
+							<li class="menu-item">
+								<a href="downloads">Downloads</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item menu-item-has-children">
+						<a>MIS-Login</a>
+						<ul class="sub-menu">
+							<li class="menu-item">
+								<a href="https://www.google.com/" target="_blank">Login To AVASHAM</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item menu-item-has-children">
+						<a>Contact</a>
+						<ul class="sub-menu">
+							<li class="menu-item">
+								<a href="contact">Write to Us</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="copyright-wrapper">
+				<p class="copyright">
+					© 2023 All rights Reserved AVASHAM.
+				</p>
+			</div>
+		</div>
+	</nav>
+	<nav class="navigation-mobile">
+		<div class="inner-wrapper">
+			<!-- Logotype -->
+			<div class="logotype-wrapper">
+				<a href="/">
+					<img alt="Logo"
+					    src="static/media/magentalogo.png">
+				</a>
+			</div>
+			<div class="navigation-side">
+				<div class="search-form-toggle toggle-button">
+					<i class="fa fa-search"></i>
+				</div>
+				<div class="menu-toggle-wrapper">
+					<div class="menu-toggle toggle-button">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search-form-wrapper">
+			<div class="search-form">
+				<div class="form-wrapper">
+					<form role="search">
+						<input class="search-field" placeholder="Enter some keywords..."
+						       title="Enter some keywords..."
+						       type="search">
+						<button class="search-submit" type="submit">
+							<i class="icofont-search"></i>
+						</button>
+					</form>
+					<div class="search-form-close">
+						<i class="far fa-times-circle"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Menu list -->
+		<div class="menu-list-wrapper" data-back-link="go back">
+			<div class="menu-toggle-close">
+				<i class="far fa-times-circle"></i>
+			</div>
+			<ul class="menu-list">
+				<li class="menu-item menu-item-has-children">
+					<a>Home</a>
+					<ul class="sub-menu">
+						<li class="menu-item">
+							<a href="/">Home</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-has-children">
+					<a>About</a>
+					<ul class="sub-menu">
+						<li class="menu-item">
+							<li ><a href="#">About Team</a></li>
+							<li ><a href="#">About Us</a></li>
+							<li ><a href="gallery">Gallery</a></li>	
+						</li>
+							<!-- <li class="menu-item"><a href="contacts.html">Contacts</a></li>
+							<li class="menu-item"><a href="team.html">Team</a></li>
+							<li class="menu-item"><a href="404.html">404 Error Page</a></li>
+							<li class="menu-item"><a href="clients.html">Clients</a></li>
+							<li class="menu-item"><a href="pricing.html">Pricing</a></li>
+							<li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
+							<li class="menu-item"><a href="faq.html">FAQ</a></li> -->
+					</ul>
+				</li>
+				<li class="menu-item menu-item-has-children">
+					<a>Services</a>
+					<ul class="sub-menu">
+						<li class="menu-item">
+							<a href="ourbusinessmodel">Our Business Model</a>
+						</li>
+						<li class="menu-item">
+							<a href="ouroperationalmodel">Our Opertional Model</a>
+						</li>
+						<li class="menu-item">
+							<a href="ourproduct">Our Products</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-has-children">
+					<a>Downloads</a>
+					<ul class="sub-menu">
+						<li class="menu-item">
+							<a href="downloads">Downloads</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-has-children">
+					<a>MIS-Login</a>
+					<ul class="sub-menu">
+						<li class="menu-item">
+							<a href="https://www.google.com/" target="_blank">Login To AVASHAM</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-has-children">
+					<a>Contact</a>
+					<ul class="sub-menu">
+						<li class="menu-item">
+							<a href="contact">Write to Us</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	{% block body %}
+    {% endblock %}
+	
+	<footer>
+		<div class="container-fluid footer-inner">
+			<div class="footer-top">
+				<div class="container footer-top-inner">
+					<p class="info-text">Magenta Finance</p>
+					<a href="index.html">
+						<div class="footer-logo">
+							<img alt="Logo" class="img-fluid" src="static/media/magentalogo.png">
+						</div>
+					</a>
+					<div class="social-networks">
+						<p class="title">Social Networks: </p>
+						<ul class="social-list">
+							<li>
+								<a href="https://themeforest.net/user/jkdevstudio">
+									<i class="fab fa-facebook-f"
+									   style="color: #3B5999;"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://themeforest.net/user/jkdevstudio">
+									<i class="fab fa-twitter"
+									   style="color: #1DA1F2;"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://themeforest.net/user/jkdevstudio">
+									<i class="fab fa-behance"
+									   style="color: #053EFF;"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://themeforest.net/user/jkdevstudio">
+									<i class="fab fa-dribbble"
+									   style="color: #EA4C89;"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://themeforest.net/user/jkdevstudio">
+									<i class="fab fa-vine"
+									   style="color: #00B488;"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-body">
+				<div class="container">
+					<div class="footer-sidebar">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="sidebar-widget text-widget">
+									<h6 class="sidebar-title">About Us</h6>
+									<p>MFSPL is a member of Microfinance Institutions Network (MFIN) which is a Self-Regulatory
+										Organization - an apex Body nominated by the RBI to oversee MFIs.
+										The members of SROs follow a standard conduct in procedures and processes that helps in
+										promoting ethical way of doing business and brings the confidence of investors and borrowers in
+										the member company.</p>
+									<!-- <h6 class="sidebar-title">Subscribe newsletter</h6>
+									<form class="newsletter-form-widget">
+										<input placeholder="Email*" required type="email">
+										<button type="submit"><i class="fa fa-envelope"></i></button>
+									</form> -->
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="sidebar-widget latest-posts-widget">
+									<h6 class="sidebar-title">Latest News</h6>
+									<ul class="post-list">
+										<li class="post">
+											<a href="#">
+												<div class="img-wrapper">
+													<img alt="" class="img-fluid"
+													     src="http://via.placeholder.com/1920x1080">
+												</div>
+											</a>
+											<div class="post-body">
+												<h6 class="post-title"><a href="#">New Branch open in Chutmulpur</a></h6>
+												<div class="description-box"><p class="date">2 March 2023 | by <a
+														href="#">HR</a></p></div>
+											</div>
+										</li>
+										<li class="post">
+											<a href="#">
+												<div class="img-wrapper">
+													<img alt="" class="img-fluid"
+													     src="http://via.placeholder.com/1920x1080">
+												</div>
+											</a>
+											<div class="post-body">
+												<h6 class="post-title"><a href="#">New Branch open in Saharanpur</a></h6>
+												<div class="description-box"><p class="date">1 February 2023 | by <a
+														href="#">HR</a></p></div>
+											</div>
+										</li>
+										<li class="post">
+											<a href="#">
+												<div class="img-wrapper">
+													<img alt="" class="img-fluid"
+													     src="http://via.placeholder.com/1920x1080">
+												</div>
+											</a>
+											<div class="post-body">
+												<h6 class="post-title"><a href="#">New Year 2023 Celebration</a></h6>
+												<div class="description-box"><p class="date">1 January 2023 | by <a
+														href="#">Risk Head</a></p></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="sidebar-widget contact-info-widget">
+									<h6 class="sidebar-title">Contact Info</h6>
+									<!-- <p class="description">Integer euismod lacus luctus magna. Quisque cursus, metus
+									                       vitae pharetra auctor, sem massa
+									                       mattis sem, at interdum magna augue eget diam.</p> -->
+									<ul class="contact-info">
+										<li><i class="fa fa-map-marker"></i>
+											<p>Shop/Unit No. 07, 2nd Floor, Plot No.7, Local Shopping Center, Sector-B, 
+												Pocket-1, Vasant Kunj, New Delhi-110070
+											</p></li>
+										<li><i class="fa fa-envelope"></i><a href="#">info@magentafinance.co.in</a></li>
+										<li><i class="fa fa-phone"></i><a href="#">011-490 75 204</a></li>
+										<li><i class="fa fa-mobile"></i><a href="#">1800-1020-638</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="copyright-wrapper">
+						<p class="copyright"><i class="fa fa-copyright"></i>2023 AVASHAM. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<!-- js-files -->
+<!-- JQuery -->
+<script src="static/assets/js/jquery-3.3.1.min.js"></script>
+<!-- AOS -->
+<script src="static/assets/js/aos.min.js"></script>
+<!-- Parallax -->
+<script src="static/assets/js/parallax.min.js"></script>
+<!-- Progress Bars -->
+<script src="static/assets/js/progressbar.min.js"></script>
+<!-- Magnific -->
+<script src="static/assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Three -->
+<script src="static/assets/js/three.min.js"></script>
+<!-- Projector -->
+<script src="static/assets/js/projector.min.js"></script>
+<!-- Renderer -->
+<script src="static/assets/js/canvas-renderer.min.js"></script>
+<!-- ImageLoaded -->
+<script src="static/assets/js/imagesloaded.pkgd.min.js"></script>
+<!-- Anime -->
+<script src="static/assets/js/anime.min.js"></script>
+<!-- Isotope -->
+<script src="static/assets/js/isotope.pkgd.min.js"></script>
+<!-- TweenLite -->
+<script src="static/assets/js/TweenMax.min.js"></script>
+<!-- Hover3D -->
+<script src="static/assets/js/jquery.hover3d.min.js"></script>
+<!-- EasePack -->
+<script src="static/assets/js/EasePack.min.js"></script>
+<!-- Particles -->
+<script src="static/assets/js/particles.min.js"></script>
+<!-- JSColor -->
+<script src="static/assets/js/jscolor.min.js"></script>
+<!-- YoutubeBackground -->
+<script src="static/assets/js/jquery.youtubebackground.min.js"></script>
+<!-- Waypoints -->
+<script src="static/assets/js/jquery.waypoints.min.js"></script>
+<!-- Swiper -->
+<script src="static/assets/js/swiper.min.js"></script>
+<!-- Main JS-file -->
+<script src="static/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

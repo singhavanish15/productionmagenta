@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact | MAGENTA{% endblock title %}
+{% block body %}
+
+<div class="wrapper-hidden z-index-100" id="main-wrapper">
+
+<!-- [3] Page-Header -->
+    <header class="page-header parallax-window bg_img dark_overlay" data-src="static/media/India-rural-women-846x476-1.jpg">India-rural-women-846x476-1
+        <div class="container breadcrumbs-wrapper">
+            <div class="breadcrumbs d-flex flex-column justify-content-center">
+                <h1 class="title">Contacts</h1>
+                <div>
+                    <ul class="breadcrumbs-list d-flex">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="contact">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+<section class="contacts-grid">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 grid-item white-section d-flex justify-content-center align-items-center"
+                 data-aos="fade-right"
+                 data-aos-anchor-placement="top-bottom"
+                 data-aos-delay="100"
+                 data-aos-duration="800"
+                 data-aos-easing="ease-in-out">
+                <div class="content d-flex flex-column">
+                    <h3 class="title">Location</h3>
+                    <p class="contact">Shop 07, 2nd Floor, Plot No.7,Local Shopping Center, Sector-B, Pocket-1, Vasant Kunj,
+                        New Delhi-110070</p>
+                </div>
+            </div>
+            <div class="col-md-4 grid-item white-section d-flex justify-content-center align-items-center"
+                 data-aos="fade-right"
+                 data-aos-anchor-placement="top-bottom"
+                 data-aos-delay="200"
+                 data-aos-duration="800"
+                 data-aos-easing="ease-in-out">
+                <div class="content d-flex flex-column">
+                    <h3 class="title">Email Us</h3>
+                    <a class="contact" href="mailto:">info@magentafinance.co.in</a>
+                    <!-- <a class="contact" href="mailto:">example@domain.com</a> -->
+                </div>
+            </div>
+            <div class="col-md-4 grid-item black-section d-flex justify-content-center align-items-center"
+                 data-aos="fade-right"
+                 data-aos-anchor-placement="top-bottom"
+                 data-aos-delay="300"
+                 data-aos-duration="800"
+                 data-aos-easing="ease-in-out">
+                <div class="content white d-flex flex-column">
+                    <h3 class="title">Let's talk</h3>
+                    <a class="contact" href="tel:">011-490 75 204</a>
+                    <!-- <a class="contact" href="tel:">+ 1-123-456-789</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-form-section parallax-window color_overlay dark_overlay_gradient"
+     data-speed="0.5" data-src="static/media/IMG_2677.jpg">
+        <div class="container heading">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <h2 class="section-title text-center title-divider white-section-title"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom"
+                        data-aos-delay="100"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out">Get In Touch
+                        <span class="highlight">.</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container contact-wrapper">
+            <div class="row d-flex flex-column"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="100"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out">
+                <form action="/contact"  method="post" class="primary-contact-form d-flex flex-column">
+                    {% csrf_token %}
+                    <div class="input-row">
+                            
+                            <input id="name" name="name" placeholder="Name*" type="text" class="form-name" required>
+                            <input id="phone" name="phone" placeholder="Phone" type="text" class="form-phone" required>
+                        </div>
+                            <input id="email" name="email" placeholder="Email*" type="email" class="form-email" required>
+                        
+
+                    <textarea id="messagge" name="messagge" class="form-message" placeholder="Write something ..." required></textarea>
+
+                    <!--  <div class="form-checkbox">
+                            <input type="checkbox" id="check" name="check" value="check" required>
+                            <label for="check">You accept the terms of service and the privacy policy</label>
+                        </div> -->
+
+                    <div class="d-flex justify-content-center">
+                            <button class="button-submit" type="submit">Send Message</button>
+                    </div>
+                    <!--  <div class="success-box">
+                            <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
+                        </div>
+
+                        <div class="error-box">
+                            <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
+                        </div>-->
+                </form>
+            </div>
+        </div>
+</section>
+ <!-- [6] Map Section -->
+ <div class="container-fluid">       
+    <div>
+        
+    <!-- Google Map API -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7011.307908063737!2d77.15607019329425!3d28.52005730290519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d55b1277a19%3A0x213e2f85a34e32cd!2sMagenta%20Finance%20Services%20Private%20Limited!5e0!3m2!1sen!2sin!4v1705236511182!5m2!1sen!2sin" width="1920" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+{% endblock %}

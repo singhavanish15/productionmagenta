@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}Gallery | MAGENTA{% endblock title %}
+
+{% block body %}
+<div class="wrapper-hidden z-index-100" id="main-wrapper">
+    <main>
+    <!-- [3] Page-Header -->
+	<header class="page-header parallax-window bg_img dark_overlay"
+    data-src="static/media/gallery.jpg">
+       <div class="container breadcrumbs-wrapper">
+           <div class="breadcrumbs d-flex flex-column justify-content-center">
+               <h1 class="title">Gallery</h1>
+               <div>
+                   <ul class="breadcrumbs-list d-flex">
+                       <li>
+                           <a href="/">Home</a>
+                       </li>
+                       <li>
+                           <a href="gallery">Gallery</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+    </header>
+
+    <section class="projects-section light-gray-section">
+        <div class="container">
+            <div class="button-group button-group-default d-flex justify-content-center">
+                <a href="gallery" class="btn btn-primary" role="button">All Photos</a>
+                &nbsp
+                {% for i in gallery_con %}
+                <a href="?gal={{i.id}}" class="btn btn-primary" role="button">{{i.gallery_typename}}</a>
+                &nbsp
+                {% endfor %}
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="grid row {{i.gallery_typename}}">
+                {% for j in gall_item %}
+                <div class="grid-item ">
+					<div class="img-wrapper">
+						<img alt="" class="img-fluid" src="{{j.subitem_img.url}}">
+						<div class="description-box hover3d-wrapper">
+							<a class="content d-flex align-items-end hover3d-child"
+							   href="{{j.subitem_img.url}}">
+								<div class="content-wrapper d-flex justify-content-between">
+									<h6>{{j.image_name}}</h6>
+									<!--<p class="info">
+										<span>17<i class="fa fa-comments"></i></span>
+										<span>24<i class="far fa-heart"></i></span>
+									</p> -->
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+    <!-- <section>
+
+        <div class="container-gallery">
+            <div class="container">
+                <h1>Gallery</h1>
+                <div class="row">
+                    <div class="list-group  ">
+
+                        <a href="gallery" class="list-group-item list-group-item-action btn btn-sm">All Photos</a>
+
+                        {% for i in gallery_con %}
+                        <a href="?gal={{i.id}}"
+                            class="list-group-item list-group-item-action btn btn-sm">{{i.gallery_typename}}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="row">
+
+                    {% for j in gall_item %}
+                    <div class="card-deck">
+                        <div class="card" style="width: 15rem;">
+                            <div class="col-sm-12">
+                                <a class="card-img-top" href="{{j.subitem_img.url}}"><img src="{{j.subitem_img.url}}"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text">{{j.image_name}}</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+    </main>
+
+</div>
+{% endblock %}

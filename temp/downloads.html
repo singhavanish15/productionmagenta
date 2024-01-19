@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Downloads | MAGENTA{% endblock title %}
+
+{% block body %}
+<div class="wrapper-hidden z-index-100" id="main-wrapper">
+  <!-- [3] Page-Header -->
+
+  <header class="page-header parallax-window bg_img dark_overlay"
+  data-src="static/media/NP_Himachal_Pradesh_68_6348260166.jpg">
+  <div class="container breadcrumbs-wrapper">
+      <div class="breadcrumbs d-flex flex-column justify-content-center">
+             <h1 class="title">Downloads</h1>
+           <div>
+              <ul class="breadcrumbs-list d-flex">
+                  <li>
+                      <a href="/">Home</a>
+                  </li>
+                  <li>
+                      <a href="downloads">Downloads</a>
+                  </li>
+                  
+              </ul>
+           </div>
+      </div>
+  </div>
+</header>
+<main>
+<Section>
+ <div class="container">
+  <div class="col d-flex justify-content-center">
+    <h2 class="section-title text-center title-divider">
+        Downloads
+        <span class="highlight">.</span>
+    </h2>
+</div>
+   <div class="row">
+     {% for i in doc_con  %}
+      <div class="col-md-3 d-flex justify-content-center">
+        <div class="card" >
+          <div class="card-body">
+            {{i.file_name}}
+          </div>
+          <div class="btn-wrapper d-flex">
+            <a class="button-default-black" download href="{{i.file_value.url}}">
+              <i class="fa fa-angle-double-down"></i>Download</a>
+          </div>    
+        </div>
+      </div>
+     {% endfor %}
+    </div>
+ </div>
+
+</Section>
+</div>
+{% endblock %}
