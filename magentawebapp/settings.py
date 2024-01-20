@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-*f1yn(y%ew)xvay(cqvys^sf&*-leeoun-ikmk1l1fhm7a745i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['43.204.142.217','www.magentafinance.co.in','magentafinance.co.in']
 
 
 # Application definition
